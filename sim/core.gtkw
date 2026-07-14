@@ -1,0 +1,109 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Sun Sep 19 21:44:47 2021
+[*]
+[dumpfile] "/home/bearmcgray/build/1802/design/testbench.vcd"
+[dumpfile_mtime] "Sun Sep 19 19:24:42 2021"
+[dumpfile_size] 273624
+[savefile] "/home/bearmcgray/build/1802/sim/core.gtkw"
+[timestart] 0
+[size] 1600 838
+[pos] 0 0
+*-25.325747 29000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.c1.
+[sst_width] 39
+[signals_width] 190
+[sst_expanded] 0
+[sst_vpaned_height] 239
+@28
+testbench.clk
+testbench.reset
+[color] 1
+testbench.c1.interrupt
+@2028
+[color] 2
+^1 sim/fsm.lbl
+testbench.c1.state[2:0]
+@28
+testbench.c1.do_exec2
+@22
+testbench.c1.rdata[7:0]
+testbench.c1.wdata[7:0]
+[color] 3
+testbench.c1.address[15:0]
+@28
+testbench.c1.mwe
+@200
+-16bit inc dec
+@28
+testbench.c1.id_op
+@22
+testbench.c1.id_in[15:0]
+@23
+testbench.c1.id_out[15:0]
+@200
+-reg file
+@28
+testbench.c1.reg_we[1:0]
+@22
+testbench.c1.wreg[15:0]
+testbench.c1.waddr[3:0]
+testbench.c1.raddr[3:0]
+@200
+-registers
+@22
+[color] 7
+testbench.c1.I[3:0]
+[color] 7
+testbench.c1.N[3:0]
+[color] 5
+testbench.c1.P[3:0]
+[color] 5
+testbench.c1.X[3:0]
+[color] 6
+testbench.c1.D[8:0]
+[color] 7
+testbench.c1.T[7:0]
+@28
+[color] 6
+testbench.c1.DF
+[color] 5
+testbench.c1.Q_o
+@22
+testbench.c1.nEF_i[4:1]
+@200
+-muxes
+@28
+testbench.c1.prr_mode[2:0]
+testbench.c1.prw_mode[2:0]
+testbench.c1.mds_mode
+testbench.c1.drw_mode
+@200
+-alu
+@28
+testbench.c1.dwe
+@2022
+[color] 2
+^2 sim/alu.lbl
+testbench.c1.aluop[3:0]
+@22
+testbench.c1.alures[8:0]
+testbench.c1.din[8:0]
+@200
+-input output
+@28
+testbench.c1.wn_o
+testbench.c1.N_o[2:0]
+@22
+testbench.c1.outline_o[7:0]
+testbench.c1.inline_i[7:0]
+@200
+-expander
+@22
+testbench.c1.toexp[7:0]
+testbench.c1.fromexp[15:0]
+@28
+testbench.c1.sethilo
+[pattern_trace] 1
+[pattern_trace] 0

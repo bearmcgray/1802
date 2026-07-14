@@ -1,0 +1,189 @@
+{
+  "ProjectName": "system-00",
+  "DLSVersion_LastSaved": "2.1.6",
+  "DLSVersion_EarliestCompatible": "2.0.0",
+  "CreationTime": "2026-05-10T16:34:56.990+03:00",
+  "LastSaveTime": "2026-06-26T00:00:03.024+03:00",
+  "Prefs_MainPinNamesDisplayMode": 2,
+  "Prefs_ChipPinNamesDisplayMode": 2,
+  "Prefs_GridDisplayMode": 1,
+  "Prefs_Snapping": 1,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": false,
+  "Prefs_SimTargetStepsPerSecond": 1000,
+  "Prefs_SimStepsPerClockTick": 3,
+  "AllCustomChipNames":[
+    "XOR",
+    "NOT",
+    "TIL311",
+    "AND",
+    "AND3",
+    "OR",
+    "OR3",
+    "REG4",
+    "PROP_GEN",
+    "AND4",
+    "AND5",
+    "OR4",
+    "ALU_X",
+    "ALU_F3",
+    "ALU_F2",
+    "ALU_F1",
+    "ALU_F0",
+    "ALU",
+    "SR",
+    "DLATCH",
+    "DFF",
+    "MUX2",
+    "REG1",
+    "NAND3",
+    "JK",
+    "TFF",
+    "TFFSR",
+    "74193",
+    "INCDEC_A",
+    "BIT",
+    "DEC2-4",
+    "MEM256x1",
+    "MEM16x1",
+    "AMEM256x8",
+    "test",
+    "LOGIC-9",
+    "7493",
+    "MC4006",
+    "MEM16x8",
+    "7489",
+    "LOGIC-4",
+    "DLATCH4",
+    "l4mux",
+    "NOR",
+    "test1",
+    "7495",
+    "SRFF",
+    "74_95",
+    "test2",
+    "LOGIC-6",
+    "NAND4",
+    "LOGIC-5",
+    "DLATCHR",
+    "DFFR",
+    "74175",
+    "7475",
+    "cpu",
+    "LOGIC-13",
+    "LOGIC-3",
+    "LOGIC-7",
+    "74151",
+    "SRFFSR",
+    "7496",
+    "LOGIC-8",
+    "test_P",
+    "test96",
+    "74HC121",
+    "LOGIC-10",
+    "74154",
+    "DLATCHSR",
+    "DFFSR",
+    "7474",
+    "LOGIC-12",
+    "LOGIC-11",
+    "BUS_CON[000]",
+    "BUS_CON[001]",
+    "BUS_CON[010]",
+    "BUS_CON[011]",
+    "BUS_CON[100]",
+    "BUS_CON[101]",
+    "BUS_CON[110]",
+    "BUS_CON[111]",
+    "0",
+    "1",
+    "BUS_M2",
+    "test_l0"
+  ],
+  "StarredList":[
+    {
+      "Name":"IN/OUT",
+      "IsCollection":true
+    },
+    {
+      "Name":"NAND",
+      "IsCollection":false
+    },
+    {
+      "Name":"XOR",
+      "IsCollection":false
+    },
+    {
+      "Name":"NOT",
+      "IsCollection":false
+    },
+    {
+      "Name":"AND",
+      "IsCollection":false
+    },
+    {
+      "Name":"OR",
+      "IsCollection":false
+    },
+    {
+      "Name":"cpu",
+      "IsCollection":false
+    },
+    {
+      "Name":"test_l0",
+      "IsCollection":false
+    }
+  ],
+  "ChipCollections":[
+    {
+      "Chips":["NAND","CLOCK","PULSE","KEY","3-STATE BUFFER"],
+      "IsToggledOpen":true,
+      "Name":"BASIC"
+    },
+    {
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "IsToggledOpen":true,
+      "Name":"IN/OUT"
+    },
+    {
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
+      "IsToggledOpen":true,
+      "Name":"MERGE/SPLIT"
+    },
+    {
+      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "IsToggledOpen":true,
+      "Name":"BUS"
+    },
+    {
+      "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
+      "IsToggledOpen":true,
+      "Name":"DISPLAY"
+    },
+    {
+      "Chips":["ROM 256×16"],
+      "IsToggledOpen":true,
+      "Name":"MEMORY"
+    },
+    {
+      "Chips":["BUZZER","REG1","REG4","PROP_GEN","ALU_X","ALU_F3","ALU_F2","ALU_F1","ALU_F0","74193","INCDEC_A","BIT","DEC2-4","MEM256x1","MEM16x1","AMEM256x8","test","LOGIC-9","7493","MC4006","MEM16x8","7489","LOGIC-4","DLATCH4","l4mux","test1","7495","SRFF","74_95","test2","LOGIC-6","NAND4","LOGIC-5","DLATCHR","DFFR","74175","7475","cpu","LOGIC-13","LOGIC-3","LOGIC-7","74151","SRFFSR","7496","LOGIC-8","test_P","test96","74HC121","LOGIC-10","74154","DLATCHSR","DFFSR","7474","LOGIC-12","LOGIC-11","BUS_CON[000]","BUS_CON[001]","BUS_CON[010]","BUS_CON[011]","BUS_CON[100]","BUS_CON[101]","BUS_CON[110]","BUS_CON[111]","0","1","BUS_M2"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    },
+    {
+      "Chips":["MUX2","NAND3","NOT","XOR","NOR","AND5","AND4","AND3","AND","OR4","OR3","OR"],
+      "IsToggledOpen":true,
+      "Name":"LOGIC"
+    },
+    {
+      "Chips":["ALU","TIL311"],
+      "IsToggledOpen":true,
+      "Name":"COMPLEX"
+    },
+    {
+      "Chips":["SR","DLATCH","DFF","JK","TFF","TFFSR"],
+      "IsToggledOpen":true,
+      "Name":"TRIG"
+    }
+  ]
+}

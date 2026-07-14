@@ -1,0 +1,14 @@
+0 nop_op
+1 or_op
+2 xor_op
+3 and_op
+4 shr_op
+5 shrc_op
+6 shl_op
+7 shlc_op
+8 add_op
+9 adc_op
+A sd_op
+B sdb_op
+C sm_op
+D smb_op

@@ -1,0 +1,209 @@
+	list macro
+markme macro reg1
+	MARK
+	SEP reg1
+	endm
+
+START:
+	LDI HIGH(ENTRY)
+	nop
+	PHI R3
+	nop
+	LDI LOW(ENTRY)
+	nop
+	PLO R3
+	nop
+	SEP R3
+	
+ENTRY:	
+	LDI HIGH(STACK)
+	PHI R2
+	LDI LOW(STACK)
+	PLO R2
+	SEX R2
+
+	LDI HIGH(HANDLER)
+	PHI R1
+	LDI LOW(HANDLER)
+	PLO R1
+	
+	LDI HIGH(DELAY)
+	PHI R7
+	LDI LOW(DELAY)
+	PLO R7
+
+	LDI LOW(TMP)	
+	PLO RF
+	LDI HIGH(TMP)		
+	PHI RF
+	
+	LDI LOW(DATA)
+	PLO R5
+	LDI HIGH(DATA)
+	PHI R5
+	
+	SKP
+	IDL
+
+	B2 SKID
+	IDL
+SKID:
+	markme R7
+	;MARK
+	;SEP R7
+	DB 12
+	DEC R2
+	
+	LSKP
+	IDL
+	IDL
+	
+	LDI 0x33
+	STR RF
+	INC RF
+	LDI 0x34
+	STR RF
+	INC RF
+	LDI 0x35
+	STR RF
+	
+	DEC RF
+	DEC RF
+	
+	LDA RF
+	LDA RF
+	LDA RF
+	
+	DEC RF
+	DEC RF
+	DEC RF
+	
+	SEX RF
+	
+	OUT 4
+	OUT 5
+	OUT 6
+	
+	DEC RF
+	DEC RF
+	DEC RF
+	
+	INP 1
+	IRX
+	INP 1
+	IRX
+	INP 1
+
+	DEC RF
+	DEC RF
+
+	OUT 4
+	OUT 5
+	OUT 6
+
+	; INP 1
+	; IRX
+	; INP 2
+	; IRX
+	; INP 3
+	
+	; DEC RF
+	; DEC RF
+
+	; DEC RF
+	; DEC RF
+	; DEC RF
+	
+	; OUT 4
+	; OUT 5
+	; OUT 6
+
+
+	SEX R2
+
+	LDI 0
+	LSIE
+	NOP
+	NOP
+	NOP
+	LDI AAH
+	SD 
+	RSHR
+	RSHL
+	ori 1
+	xri 2
+	adi 3
+	
+	; MARK
+	LBR MAIN
+	IDL
+	
+	
+	ORG 0x200
+DATA:	
+	DB 0x99
+
+	ORG 0x300
+TMP: 	
+
+	ORG 0x422
+MAIN:	
+	LDI 10
+	PLO R6
+MA:
+	DEC R6
+	GLO R6
+	BNZ MA
+	
+	;SEQ
+LOOP:
+	;NOP
+	SEQ
+	REQ
+	; BQ LOOP
+	BN1 LOOP
+	
+	PAGE
+	
+	
+RETURN_DELAY:
+	RET
+DELAY:
+	LDXA
+	
+	PLO R6
+DEL1:
+	DEC R6
+	GLO R6
+	BNZ DEL1
+	
+	SEX R2
+	
+	INC R2
+	
+	BR RETURN_DELAY
+
+EXITHAND:
+	LDA R2
+	RET
+HANDLER:
+	DEC R2
+	SAV
+	DEC R2
+	STR R2
+
+	BQ DOLIT
+	SEQ
+	REQ
+	BR EXITHAND
+DOLIT:	
+	REQ
+	SEQ
+	BR EXITHAND
+	
+	
+	ORG 0x1fff
+STACK:
+	DB 0x77
+	END
+	

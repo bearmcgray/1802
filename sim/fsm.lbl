@@ -1,0 +1,6 @@
+000 reset
+001 fetch
+010 exec1
+011 exec2
+100 dma
+101 int
